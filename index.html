@@ -14,12 +14,12 @@
           <option value="option2"><icon></icon>Orange jerseys</option>
           <option value="option3"><icon></icon>No jersey</option>
         </select>
-        <p>0</p>
+        <h2>Team A Score: <span id="scoreA">0</span></h2>
         <p>Team fouls: <span>0</span></p>
       </div>
-      <div id="timer">
+      <div>
         <h2>Time</h2>
-        <p>10:00</p>
+        <span id="timer">00:00</span>
       </div>
       <div id="team2_score">
         <select>
@@ -27,27 +27,28 @@
           <option value="option2"><icon></icon>Orange jerseys</option>
           <option value="option3"><icon></icon>No jersey</option>
         </select>
-        <p>0</p>
+        <h2>Team B Score: <span id="scoreB">0</span></h2>
         <p>Team fouls: <span>0</span></p>
       </div>
     </div>
     <div id="control_section">
       <div class="points">
-        <button id="point1">+1</button>
-        <button>+2</button>
-        <button>+3</button>
+        <button data-team="A" data-points="1">+1</button>
+        <button data-team="A" data-points="2">+2</button>
+        <button data-team="A" data-points="3">+3</button>
       </div>
       <!--time control and fouls-->
       <div>
-        <button>Start</button>
+        <button id="startTimer">Start Timer</button>
+        <button id="pauseTimer">Pause Timer</button>
         <button>Foul1</button>
         <button>Foul2</button>
       </div>
       <!---->
       <div class="points">
-        <button>+1</button>
-        <button>+2</button>
-        <button>+3</button>
+        <button data-team="B" data-points="1">+1</button>
+        <button data-team="B" data-points="2">+2</button>
+        <button data-team="B" data-points="3">+3</button>
       </div>
     </div>
     <button>Add to session</button>
