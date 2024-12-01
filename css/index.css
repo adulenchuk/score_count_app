@@ -1,25 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Modak&family=Righteous&display=swap");
+@import url(global.css);
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-:root {
-  scroll-behavior: smooth;
-  --text-color: #ffffffef;
-  --accent-text-color: #d78c43;
-  --background-color: #1a1a1a;
-}
-
-html, body {
-  /* background-image: url(./img/bg-image.png);
-    background-attachment: fixed;
-    background-size: 100vw 100vh; */
-  background-color: var(--background-color);
-  color: var(--text-color);
-
+html {
   height: 100%; /* Займаємо 100% висоти вікна */
   margin: 0; /* Забираємо відступи браузера */
   display: flex;
