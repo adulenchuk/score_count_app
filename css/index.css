@@ -1,11 +1,11 @@
 @import url(global.css);
 
 html {
-  height: 100%; /* Займаємо 100% висоти вікна */
-  margin: 0; /* Забираємо відступи браузера */
+  height: 100%;
+  margin: 0;
   display: flex;
-  justify-content: center; /* Центрування по горизонталі */
-  align-items: center; /* Центрування по вертикалі */
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -19,39 +19,45 @@ html {
   flex-direction: column;
   align-items: center;
   h1 {
-    /* margin: auto; */
+    color: var(--text-color);
     font-weight: 300;
+    font-size: 40px;
     font-family: "Righteous";
   }
   #gamesList {
-    outline: 2px solid var(--accent-text-color);
+    outline: 2px solid var(--accent-color);
     border-radius: 2cap;
+    background-color: var(--background-inner-color);
   }
   a {
-    text-decoration: none;
-    color: var(--text-color);
     justify-items: center;
-    background-color: var(--accent-text-color);
     border-radius: 2cap;
     padding: 5px 10px;
     margin-top: 25px;
     margin-bottom: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    font-size: 25px;
     font-family: "Righteous";
+  }
+  a:hover {
+    background-color: var(--button-hover-green-color);
   }
   #resetSession {
     all: unset;
+    cursor: pointer;
+    text-align: center;
     padding: 2px 7px;
     margin: 15px;
-    font-family: "Righteous";
-    font-size: 16px;
-    background-color: var(--accent-text-color);
-    color: var(--text-color);
     border-radius: 2cap;
-    text-align: center;
-    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: "Righteous";
   }
   #resetSession:hover {
-    background-color: #0056b3;
+    background-color: var(--button-hover-red-color);
   }
 }
 
@@ -60,17 +66,20 @@ html {
 }
 
 .game {
-  font-family: "Sans Serif";
-  outline: 1px solid var(--accent-text-color);
-  border-radius: 2cap;
-  padding: 15px;
   margin: 20px 50px;
+  padding: 15px;
+  outline: 2px solid var(--container-outline-color);
+  border-radius: 2cap;
+  background-color: var(--background-filling-color);
+  font-family: "Sans Serif";
   h3 {
-    font-family: "Righteous";
     font-weight: 200;
     margin-bottom: 5px;
+    font-size: 20px;
+    font-family: "Righteous";
   }
   p {
     font-weight: 100;
+    font-size: 16px;
   }
 }

@@ -8,21 +8,28 @@
 }
 
 :root {
-    scroll-behavior: smooth;
-    --text-color: #ffffffef;
-    --accent-text-color: #d78c43;
-    --background-color: #1a1a1a;
-  }
+  scroll-behavior: smooth;
+  --text-color: #fffffff6;
+  --accent-color: #be7c39;
+  --background-outer-color: #0f0f0ff3;
+  --background-inner-color: #302f2fc4;
+  --background-filling-color: #222222e7;
+  --container-outline-color: #535252cc;
+  --button-hover-green-color: #3aa543cc;
+  --button-hover-red-color: #c00d0dc7;
+  --button-hover-blue-color: #2357c5cc;
+}
 
-  body {
-    /* background-image: url(./img/bg-image.png);
-        background-attachment: fixed;
-        background-size: 100vw 100vh; */
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
+body {
+  /* background-image: url(../img/bg-image.png);
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  object-fit: fill; */
+  background-color: var(--background-outer-color);
+  color: var(--text-color);
+}
 
-  .container {
-    max-width: 1200px;
-    padding: 15px;
-  }
+.container {
+  max-width: 1200px;
+  padding: 15px;
+}
