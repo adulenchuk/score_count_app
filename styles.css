@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Modak&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Modak&family=Righteous&display=swap");
 
 *,
 *:before,
@@ -23,25 +23,65 @@ body {
 
 .container {
   max-width: 1200px;
-  outline: 5px solid var(--accent-text-color);
+  outline: 3px solid var(--accent-text-color);
   border-radius: 2cap;
   padding: 15px;
-  font-family: 'Righteous';
-  margin: auto;
 }
 
-section.container {
+.session {
   margin: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   a {
     text-decoration: none;
     color: var(--text-color);
   }
   h1 {
-    margin: auto;
+    /* margin: auto; */
     font-weight: 300;
-    font-family: 'Righteous';
-    box-sizing: border-box;
+    font-family: "Righteous";
   }
+  a {
+    background-color: var(--accent-text-color);
+    border-radius: 2cap;
+    padding: 5px 10px;
+    font-family: "Righteous";
+  }
+}
+
+.game * {
+  margin: 0;
+}
+
+.game {
+  font-family: "Sans Serif";
+  outline: 1px solid var(--accent-text-color);
+  border-radius: 2cap;
+  padding: 15px;
+  margin: 15px;
+  h3 {
+    font-family: "Righteous";
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  p {
+    font-weight: 100;
+  }
+}
+
+#resetSession {
+  all: unset;
+  padding: 2px 7px;
+  margin-top: 20px;
+  font-family: "Righteous";
+  font-size: 16px;
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  border-radius: 2cap;
+  text-align: center;
+  cursor: pointer;
+}
+#resetSession:hover {
+  background-color: #0056b3;
 }
