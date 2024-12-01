@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="score">
+        <div id="score__teamA">
+          <select name="jerseyTypeA">
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+          </select>
+          <h2>Team A Score: <span id="scoreA">0</span></h2>
+          <p>Team fouls: <span id="foulCountA">0</span></p>
+        </div>
+        <div class="timer_container">
+          <h2>Time</h2>
+          <span id="timer">00:00</span>
+        </div>
+        <div id="score__teamB">
+          <select name="jerseyTypeB">
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+          </select>
+          <h2>Team B Score: <span id="scoreB">0</span></h2>
+          <p>Team fouls: <span id="foulCountB">0</span></p>
+        </div>
+      </div>
+      <div id="control_section">
+        <div class="points">
+          <button data-team="A" data-points="1">+1</button>
+          <button data-team="A" data-points="2">+2</button>
+          <button data-team="A" data-points="3">+3</button>
+        </div>
+        <div>
+          <button id="startTimer">Start Timer</button>
+          <button id="pauseTimer">Pause Timer</button>
+          <button id="foulA">Foul A</button>
+          <button id="foulB">Foul B</button>
+        </div>
+        <div class="points">
+          <button data-team="B" data-points="1">+1</button>
+          <button data-team="B" data-points="2">+2</button>
+          <button data-team="B" data-points="3">+3</button>
+        </div>
+      </div>
+      <button name="submitBtn" type="submit">Add to session</button>
+      <a href="index.html">Back to main page</a>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

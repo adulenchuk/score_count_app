@@ -6,53 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header></header>
-    <div class="main_score">
-      <div id="team1_score">
-        <select>
-          <option value="option1"><icon></icon>Green jerseys</option>
-          <option value="option2"><icon></icon>Orange jerseys</option>
-          <option value="option3"><icon></icon>No jersey</option>
-        </select>
-        <h2>Team A Score: <span id="scoreA">0</span></h2>
-        <p>Team fouls: <span>0</span></p>
-      </div>
-      <div>
-        <h2>Time</h2>
-        <span id="timer">00:00</span>
-      </div>
-      <div id="team2_score">
-        <select>
-          <option value="option1"><icon></icon>Green jerseys</option>
-          <option value="option2"><icon></icon>Orange jerseys</option>
-          <option value="option3"><icon></icon>No jersey</option>
-        </select>
-        <h2>Team B Score: <span id="scoreB">0</span></h2>
-        <p>Team fouls: <span>0</span></p>
-      </div>
-    </div>
-    <div id="control_section">
-      <div class="points">
-        <button data-team="A" data-points="1">+1</button>
-        <button data-team="A" data-points="2">+2</button>
-        <button data-team="A" data-points="3">+3</button>
-      </div>
-      <!--time control and fouls-->
-      <div>
-        <button id="startTimer">Start Timer</button>
-        <button id="pauseTimer">Pause Timer</button>
-        <button>Foul1</button>
-        <button>Foul2</button>
-      </div>
-      <!---->
-      <div class="points">
-        <button data-team="B" data-points="1">+1</button>
-        <button data-team="B" data-points="2">+2</button>
-        <button data-team="B" data-points="3">+3</button>
-      </div>
-    </div>
-    <button>Add to session</button>
+    <section class="container">
+      <h1>Game Session</h1>
+      <div id="gamesList"></div>
+      <a href="score.html">Start a new game</a>
+      <button id="clearGames">Clear All Games</button>
+    </section>
+    <script src="index.js"></script>
   </body>
-  <footer></footer>
-  <script src="script.js"></script>
 </html>
