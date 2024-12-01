@@ -10,33 +10,41 @@
     <div class="container">
       <div class="score">
         <div id="score__teamA">
-          <select name="jerseyTypeA">
-            <option>Red</option>
-            <option>Green</option>
-            <option>Blue</option>
-          </select>
-          <h2>Team A Score: <p id="scoreA">0</p></h2>
+          <h2>
+            Team
+            <select name="jerseyTypeA">
+              <option>Red</option>
+              <option>Green</option>
+              <option>Blue</option>
+            </select>
+            Score:
+          </h2>
+          <p id="scoreA">0</p>
           <p>Team fouls: <span id="foulCountA">0</span></p>
         </div>
         <div class="timer_container">
           <h2>Time</h2>
-          <span id="timer">00:00</span>
+          <p id="timer">00:00</p>
         </div>
         <div id="score__teamB">
-          <select name="jerseyTypeB">
-            <option>Red</option>
-            <option>Green</option>
-            <option>Blue</option>
-          </select>
-          <h2>Team B Score: <p id="scoreB">0</p></h2>
+          <h2>
+            Team
+            <select name="jerseyTypeB">
+              <option>Red</option>
+              <option>Green</option>
+              <option>Blue</option>
+            </select>
+            Score:
+          </h2>
+          <p id="scoreB">0</p>
           <p>Team fouls: <span id="foulCountB">0</span></p>
         </div>
       </div>
       <div id="control_section">
         <div class="points">
-          <button class="buttons" data-team="A" data-points="1">+1</button>
-          <button class="buttons" data-team="A" data-points="2">+2</button>
-          <button class="buttons" data-team="A" data-points="3">+3</button>
+          <button class="buttons points" data-team="A" data-points="1">+1</button>
+          <button class="buttons points" data-team="A" data-points="2">+2</button>
+          <button class="buttons points" data-team="A" data-points="3">+3</button>
         </div>
         <div class="time_control">
           <button class="buttons" id="startTimer">Start Timer</button>
@@ -47,15 +55,15 @@
           </div>
         </div>
         <div class="points">
-          <button class="buttons" data-team="B" data-points="1">+1</button>
-          <button class="buttons" data-team="B" data-points="2">+2</button>
-          <button class="buttons" data-team="B" data-points="3">+3</button>
+          <button class="buttons points" data-team="B" data-points="1">+1</button>
+          <button class="buttons points" data-team="B" data-points="2">+2</button>
+          <button class="buttons points" data-team="B" data-points="3">+3</button>
         </div>
       </div>
-      <button class="buttons submit_button" name="submitBtn" type="submit">
+      <button class="submit_button" name="submitBtn" type="submit">
         Add to session
       </button>
-      <a href="index.html">Back to main page</a>
+      <a id="back_to_main" href="index.html">Back to main page</a>
     </div>
     <footer></footer>
     <script src="score.js"></script>

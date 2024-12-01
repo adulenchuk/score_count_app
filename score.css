@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Modak&family=Righteous&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Tiny5&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Tiny5&display=swap");
 
 *,
 *:before,
@@ -32,10 +32,44 @@ div.container {
 .score {
   display: flex;
   justify-content: space-around;
-  #scoreA {
-    font-family: 'Tiny5';
+  #score__teamA {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-family: "Righteous";
+      font-weight: 200;
+    }
   }
-
+  #scoreA {
+    font-family: "Tiny5";
+  }
+  .timer_container {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    place-items: center;
+    h2 {
+      font-family: "Righteous";
+      font-weight: 200;
+    }
+    #timer {
+      font-family: "Tiny5";
+      font-weight: 200;
+    }
+  }
+  #score__teamB {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-family: "Righteous";
+      font-weight: 200;
+    }
+  }
+  #scoreB {
+    font-family: "Tiny5";
+  }
 }
 
 #control_section {
@@ -57,21 +91,67 @@ div.container {
 
 .submit_button {
   all: unset;
+  padding: 2px 7px;
+  margin: 20px auto;
+  font-family: "Righteous";
+  font-size: 16px;
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  border-radius: 2cap;
   text-align: center;
+  cursor: pointer;
+}
+.submit_button:hover {
+  background-color: #0056b3;
 }
 
-/* .buttons {
-    all: unset;
-    padding: 2px 7px;
-    margin: 15px;
-    font-family: "Righteous";
-    font-size: 16px;
-    background-color: var(--accent-text-color);
-    color: var(--text-color);
-    border-radius: 2cap;
-    text-align: center;
-    cursor: pointer;
+#back_to_main {
+  text-decoration: none;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--accent-text-color);
+  border-radius: 2cap;
+  padding: 5px 10px;
+  margin: 25px auto 15px 25px;
+  font-family: "Righteous";
+}
+
+.buttons {
+  all: unset;
+  padding: 2px 7px;
+  margin: 15px;
+  font-family: "Tiny5";
+  font-size: 16px;
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  border-radius: 2cap;
+  text-align: center;
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: #0056b3;
+}
+
+/* Скидаємо стандартні стилі select */
+select {
+  all: unset; /* Скидає всі стандартні стилі */
+  padding: 2px;
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+
+  /* Стилі для опцій */
+  option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
   }
-  .buttons:hover {
-    background-color: #0056b3;
-  } */
+  /* Зміна стилю при наведенні */
+  select:hover {
+    border-color: var(--accent-text-color);
+  }
+}
+
