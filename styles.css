@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --text-color: #ffffffef;
+    --accent-text-color: #d78c43;
+    --background-color: #1a1a1a;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+section.container {
+    margin: auto;
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
