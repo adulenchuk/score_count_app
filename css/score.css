@@ -5,6 +5,24 @@ div.container {
   flex-direction: column;
 }
 
+select {
+  all: unset;
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: var(--background-outer-color);
+  transition: border-color 0.3s ease;
+}
+select:hover {
+  border-color: var(--accent-color);
+}
+select:focus {
+  outline: none;
+  border-color: var(--button-hover-blue-color);
+}
+
 .score {
   display: flex;
   justify-content: space-around;
@@ -13,12 +31,14 @@ div.container {
     flex-direction: column;
     text-align: center;
     h2 {
-      font-family: "Righteous";
       font-weight: 200;
+      font-size: 25px;
+      font-family: "Righteous";
     }
-  }
-  #scoreA {
-    font-family: "Tiny5";
+    #scoreA {
+      font-size: 50px;
+      font-family: "Tiny5";
+    }
   }
   .timer_container {
     text-align: center;
@@ -26,10 +46,12 @@ div.container {
     grid-template-rows: 1fr 2fr;
     place-items: center;
     h2 {
+      font-size: 25px;
       font-family: "Righteous";
       font-weight: 200;
     }
     #timer {
+      font-size: 50px;
       font-family: "Tiny5";
       font-weight: 200;
     }
@@ -42,18 +64,41 @@ div.container {
       font-family: "Righteous";
       font-weight: 200;
     }
+    #scoreB {
+      font-size: 50px;
+      font-family: "Tiny5";
+    }
   }
-  #scoreB {
-    font-family: "Tiny5";
+  .fouls {
+    font-size: 17px;
+    font-weight: 100;
+    font-family: "Righteous";
   }
 }
+
 
 #control_section {
   display: flex;
   justify-content: space-around;
+  .buttons {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    margin: 15px;
+    padding: 2px 7px;
+    border-radius: 2cap;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: "Tiny5";
+  }
+  .buttons:hover {
+    background-color: var(--button-hover-blue-color);
+  }
   .points {
     display: flex;
     flex-direction: column;
+    font-size: 25px;
   }
   .time_control {
     display: flex;
@@ -67,66 +112,31 @@ div.container {
 
 .submit_button {
   all: unset;
+  cursor: pointer;
   padding: 2px 7px;
   margin: 20px auto;
-  font-family: "Righteous";
-  font-size: 16px;
-  background-color: var(--accent-text-color);
-  color: var(--text-color);
-  border-radius: 2cap;
   text-align: center;
-  cursor: pointer;
+  border-radius: 2cap;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Righteous";
 }
 .submit_button:hover {
-  background-color: #0056b3;
+  background-color: var(--button-hover-green-color);
 }
 
 #back_to_main {
+  margin: 25px auto 15px 25px;
+  padding: 5px 10px;
+  border-radius: 2cap;
   text-decoration: none;
   text-align: center;
   color: var(--text-color);
-  background-color: var(--accent-text-color);
-  border-radius: 2cap;
-  padding: 5px 10px;
-  margin: 25px auto 15px 25px;
+  background-color: var(--accent-color);
   font-family: "Righteous";
 }
-
-.buttons {
-  all: unset;
-  padding: 2px 7px;
-  margin: 15px;
-  font-family: "Tiny5";
-  font-size: 16px;
-  background-color: var(--accent-text-color);
-  color: var(--text-color);
-  border-radius: 2cap;
-  text-align: center;
-  cursor: pointer;
-}
-.buttons:hover {
-  background-color: #0056b3;
+#back_to_main:hover {
+  background-color: var(--button-hover-red-color);
 }
 
-/* Скидаємо стандартні стилі select */
-select {
-  all: unset; /* Скидає всі стандартні стилі */
-  padding: 2px;
-  background-color: #f8f8f8;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  color: #333;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-
-  /* Стилі для опцій */
-  option {
-    background-color: #fff;
-    color: #333;
-    padding: 10px;
-  }
-  /* Зміна стилю при наведенні */
-  select:hover {
-    border-color: var(--accent-text-color);
-  }
-}
