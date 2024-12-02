@@ -76,7 +76,6 @@ select:focus {
   }
 }
 
-
 #control_section {
   display: flex;
   justify-content: space-around;
@@ -139,4 +138,3 @@ select:focus {
 #back_to_main:hover {
   background-color: var(--button-hover-red-color);
 }
-
